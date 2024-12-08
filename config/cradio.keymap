@@ -117,9 +117,9 @@
         layer3 {
             display-name = "FUNMSE";
             bindings = <
-                 &kp F12          &kp F11          &kp F10          &kp F9           &kp SPACE                         &kp INS          &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT
-                 &kp F4           &kp F3           &kp F2           &kp F1           &kp GRAVE                         &kp K_APP        &hmk LCTRL LCLK  &hmk LALT RCLK   &hmk LGUI MB4    &hmk LSHFT MB5
-                 &kp F8           &kp F7           &kp F6           &kp F5           &kp TILDE                         &win_sleep       &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT
+                 &kp F12          &kp F11          &kp F10          &kp F9           &studio_unlock                    &kp INS          &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT
+                 &kp F4           &kp F3           &kp F2           &kp F1           &kp SPACE                         &kp K_APP        &hmk LCTRL LCLK  &hmk LALT RCLK   &hmk LGUI MB4    &hmk LSHFT MB5
+                 &kp F8           &kp F7           &kp F6           &kp F5           &key_repeat                       &win_sleep       &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT
                                                                     &none            &none                             &lsl 4 4         &mkp MB3 >;
 
         };
@@ -129,7 +129,7 @@
                  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                      &none            &none            &none            &none            &none
                  &bt BT_DISC 0    &bt BT_DISC 1    &bt BT_DISC 2    &bt BT_DISC 3    &bt BT_DISC 4                     &none            &none            &none            &none            &none
                  &bt BT_CLR_ALL   &bt BT_PRV       &bt BT_NXT       &bt BT_CLR       &default_report                   &out OUT_TOG     &none            &none            &none            &none
-                                                                    &bootloader      &none                             &none            &studio_unlock >;
+                                                                    &bootloader      &none                             &none            &bootloader >;
 
         };
     };
