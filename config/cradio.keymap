@@ -112,7 +112,7 @@
                  &kp SQT          &kp LBRC         &kp LBKT         &kp LPAR         &kp GRAVE                         &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp COLON
                  &kp DQT          &kp RBRC         &kp RBKT         &kp RPAR         &kp TILDE                         &kp PIPE         &kp UNDER        &kp LT           &kp GT           &kp QMARK
                                                                     &kp MINUS        &kp PLUS                          &none            &none >;
-aaa
+
         };
         layer3 {
             display-name = "FUNMSE";
