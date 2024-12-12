@@ -67,7 +67,7 @@
 
         };
         layer2 {
-            display-name = "SYMMED";
+            display-name = "SYMBOL";
             bindings = <
                  &kp EXCL         &kp AT           &kp POUND        &kp DLLR         &kp PRCNT                                                           &kp CARET        &kp AMPS         &kp ASTRK        &kp PIPE         &kp BSLH
                  &kp GRAVE        &kp LBRC         &kp LBKT         &kp LPAR         &kp C_BRI_UP                                                        &kp C_AC_BACK    &kp EQUAL        &kp DQT          &kp SQT          &kp COLON
