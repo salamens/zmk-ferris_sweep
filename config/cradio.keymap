@@ -63,24 +63,24 @@
                  &hsk LALT LALT   &kp BSPC         &kp UP           &kp DEL          &kp TAB                                                             &kp INS          &kp N7           &kp N8           &kp N9           &kp LALT
                  &hsk LCTRL LCTRL &kp LEFT         &kp DOWN         &kp RIGHT        &kp PG_UP                                                           &kp HOME         &kp N4           &kp N5           &kp N6           &kp LCTRL
                  &hsk LSHFT LSHFT &hsk LGUI LGUI   &key_repeat      &kp ENTER        &kp PG_DN                                                           &kp END          &kp N1           &kp N2           &kp N3           &kp LSHFT
-                                                                    &none            &kp C_MUTE                                                          &hcw LSHFT CAPS  &kp N0 >;
+                                                                    &none            &none                                                               &hcw LSHFT CAPS  &kp N0 >;
 
         };
         layer2 {
             display-name = "SYMMED";
             bindings = <
                  &kp EXCL         &kp AT           &kp POUND        &kp DLLR         &kp PRCNT                                                           &kp CARET        &kp AMPS         &kp ASTRK        &kp PIPE         &kp BSLH
-                 &kp GRAVE        &kp LBRC         &kp LBKT         &kp LPAR         &kp C_VOL_UP                                                        &kp C_PREV       &kp EQUAL        &kp DQT          &kp SQT          &kp COLON
-                 &kp TILDE        &kp RBRC         &kp RBKT         &kp RPAR         &kp C_VOL_DN                                                        &kp C_NEXT       &kp UNDER        &kp LT           &kp GT           &kp QMARK
-                                                                    &kp MINUS        &kp PLUS                                                            &kp C_PLAY_PAUSE &none >;
+                 &kp GRAVE        &kp LBRC         &kp LBKT         &kp LPAR         &kp C_BRI_UP                                                        &kp C_AC_BACK    &kp EQUAL        &kp DQT          &kp SQT          &kp COLON
+                 &kp TILDE        &kp RBRC         &kp RBKT         &kp RPAR         &kp C_BRI_DN                                                        &kp C_AC_FORWARD &kp UNDER        &kp LT           &kp GT           &kp QMARK
+                                                                    &kp MINUS        &kp PLUS                                                            &none            &none >;
 
         };
         layer3 {
             display-name = "FUNMSE";
             bindings = <
-                 &kp F12         &kp F9           &kp F8            &kp F7           &kp C_AC_BACK                                                       &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT  &hsk LALT LALT
-                 &kp F11         &kp F6           &kp F5            &kp F4           &none                                                               &none            &mkp LCLK        &mkp MB3         &mkp RCLK        &hsk LCTRL LCTRL
-                 &kp F10         &kp F3           &kp F2            &kp F1           &kp C_AC_FORWARD                                                    &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT  &hsk LSHFT LSHFT
+                 &kp F12         &kp F9           &kp F8            &kp F7           &kp C_VOL_UP                                                        &kp C_PREV       &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT
+                 &kp F11         &kp F6           &kp F5            &kp F4           &kp C_MUTE                                                          &kp C_PLAY_PAUSE &mkp LCLK        &mkp MB3         &mkp RCLK        &none
+                 &kp F10         &kp F3           &kp F2            &kp F1           &kp C_VOL_DN                                                        &kp C_NEXT       &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT
                                                                     &none            &none                                                               &mo 4            &kp K_APP >;
 
         };
