@@ -79,8 +79,8 @@
         layer3 {
             display-name = "FUNMSE";
             bindings = <
-                 &kp F12         &kp F9           &kp F8            &kp F7           &kp C_VOL_UP                                                        &kp C_PREV       &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT
-                 &kp F11         &kp F6           &kp F5            &kp F4           &kp C_MUTE                                                          &kp C_PLAY_PAUSE &mkp LCLK        &mkp MB3         &mkp RCLK        &none
+                 &kp F12         &kp F9           &kp F8            &kp F7           &kp C_MUTE                                                          &kp C_PLAY_PAUSE &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT
+                 &kp F11         &kp F6           &kp F5            &kp F4           &kp C_VOL_UP                                                        &kp C_PREV       &mkp LCLK        &mkp MB3         &mkp RCLK        &none
                  &kp F10         &kp F3           &kp F2            &kp F1           &kp C_VOL_DN                                                        &kp C_NEXT       &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT
                                                                     &none            &none                                                               &mo 4            &kp K_APP >;
 
