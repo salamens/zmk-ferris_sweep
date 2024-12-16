@@ -35,17 +35,17 @@
         //     delay-ms = <0>;                   // 10
         // };
         // lclk_rclk: lclk_rclk    { bindings = <&mkp LCLK>, <&mkp RCLK>; compatible = "zmk,behavior-tap-dance"; #binding-cells = <0>; };
-        lsk: layer_sticky_key   { bindings = <&mo>, <&sk>;        compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
-        lsl: layer_sticky_layer { bindings = <&mo>, <&sl>;        compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
-        lmk: layer_mouse_key    { bindings = <&mo>, <&mkp>;       compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
-        lcw: layer_caps_word    { bindings = <&mo>, <&caps_word>; compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
-        hsk: hold_sticky_key    { bindings = <&kp>, <&sk>;        compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
-        hsl: hold_sticky_layer  { bindings = <&kp>, <&sl>;        compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
-        hmk: hold_mouse_key     { bindings = <&kp>, <&mkp>;       compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
-        hcw: hold_caps_word     { bindings = <&kp>, <&caps_word>; compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
-        m_lclk_lmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&mkp LCLK>, <&mmv MOVE_LEFT>; mods = <(MOD_LCTL)>; }
-        m_mclk_dmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&mkp MCLK>, <&mmv MOVE_DOWN>; mods = <(MOD_LCTL)>; }
-        m_rclk_rmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&mkp RCLK>, <&mmv MOVE_RIGHT>; mods = <(MOD_LCTL)>; }
+        lsk: layer_sticky_key      { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; bindings = <&mo>, <&sk>; };
+        lsl: layer_sticky_layer    { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; bindings = <&mo>, <&sl>; };
+        lmk: layer_mouse_key       { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; bindings = <&mo>, <&mkp>; };
+        lcw: layer_caps_word       { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; bindings = <&mo>, <&caps_word>; };
+        hsk: hold_sticky_key       { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; bindings = <&kp>, <&sk>; };
+        hsl: hold_sticky_layer     { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; bindings = <&kp>, <&sl>; };
+        hmk: hold_mouse_key        { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; bindings = <&kp>, <&mkp>; };
+        hcw: hold_caps_word        { compatible = "zmk,behavior-hold-tap";  #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; bindings = <&kp>, <&caps_word>; };
+        m_lclk_lmove: m_lclk_lmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; mods = <(MOD_LCTL)>; bindings = <&mkp LCLK>, <&mmv MOVE_LEFT>; }
+        m_mclk_dmove: m_mclk_dmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; mods = <(MOD_LCTL)>; bindings = <&mkp MCLK>, <&mmv MOVE_DOWN>; }
+        m_rclk_rmove: m_rclk_rmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; mods = <(MOD_LCTL)>; bindings = <&mkp RCLK>, <&mmv MOVE_RIGHT>; }
         };
     };
     macros {
