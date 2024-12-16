@@ -43,9 +43,9 @@
         hsl: hold_sticky_layer  { bindings = <&kp>, <&sl>;        compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
         hmk: hold_mouse_key     { bindings = <&kp>, <&mkp>;       compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
         hcw: hold_caps_word     { bindings = <&kp>, <&caps_word>; compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
-        m_lclk_lmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&mkp LCLK>, <&mmv MOVE_LEFT>; mods = <(MOD_LCTL)>;
-        m_mclk_dmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&mkp MCLK>, <&mmv MOVE_DOWN>; mods = <(MOD_LCTL)>;
-        m_rclk_rmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&mkp RCLK>, <&mmv MOVE_RIGHT>; mods = <(MOD_LCTL)>;
+        m_lclk_lmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&mkp LCLK>, <&mmv MOVE_LEFT>; mods = <(MOD_LCTL)>; }
+        m_mclk_dmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&mkp MCLK>, <&mmv MOVE_DOWN>; mods = <(MOD_LCTL)>; }
+        m_rclk_rmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&mkp RCLK>, <&mmv MOVE_RIGHT>; mods = <(MOD_LCTL)>; }
         };
     };
     macros {
