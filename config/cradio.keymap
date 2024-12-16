@@ -61,7 +61,7 @@
         layer1 {
             display-name = "NAVNUM";
             bindings = <
-                 &hsk LALT LALT   &kp BSPC         &kp UP           &kp DEL          &kp TAB                                                             &kp INS          &kp N7           &kp N8           &kp N9           &kp LALT
+                 &hsk LALT LALT   &kp BSPC         &kp UP           &kp TAB          &kp DEL                                                             &kp INS          &kp N7           &kp N8           &kp N9           &kp LALT
                  &hsk LCTRL LCTRL &kp LEFT         &kp DOWN         &kp RIGHT        &kp PG_UP                                                           &kp HOME         &kp N4           &kp N5           &kp N6           &kp LCTRL
                  &hsk LSHFT LSHFT &hsk LGUI LGUI   &key_repeat      &kp ENTER        &kp PG_DN                                                           &kp END          &kp N1           &kp N2           &kp N3           &kp LSHFT
                                                                     &none            &none                                                               &hcw LSHFT CAPS  &kp N0 >;
@@ -71,8 +71,8 @@
             display-name = "SYMBOL";
             bindings = <
                  &kp EXCL         &kp AT           &kp POUND        &kp DLLR         &kp PRCNT                                                           &kp CARET        &kp AMPS         &kp ASTRK        &kp PIPE         &kp BSLH
-                 &kp GRAVE        &kp LBRC         &kp LBKT         &kp LPAR         &kp C_BRI_UP                                                        &kp C_AC_BACK    &kp EQUAL        &kp DQT          &kp SQT          &kp COLON
-                 &kp TILDE        &kp RBRC         &kp RBKT         &kp RPAR         &kp C_BRI_DN                                                        &kp C_AC_FORWARD &kp UNDER        &kp LT           &kp GT           &kp QMARK
+                 &kp GRAVE        &kp LBKT         &kp LBRC         &kp LPAR         &kp C_BRI_UP                                                        &kp C_AC_BACK    &kp EQUAL        &kp DQT          &kp SQT          &kp COLON
+                 &kp TILDE        &kp RBKT         &kp RBRC         &kp RPAR         &kp C_BRI_DN                                                        &kp C_AC_FORWARD &kp UNDER        &kp LT           &kp GT           &kp QMARK
                                                                     &kp MINUS        &kp PLUS                                                            &none            &none >;
 
         };
