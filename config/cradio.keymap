@@ -46,7 +46,6 @@
         m_lclk_lmove: m_lclk_lmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; mods = <(MOD_LCTL)>; bindings = <&mkp LCLK>, <&mmv MOVE_LEFT>; };
         m_mclk_dmove: m_mclk_dmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; mods = <(MOD_LCTL)>; bindings = <&mkp MCLK>, <&mmv MOVE_DOWN>; };
         m_rclk_rmove: m_rclk_rmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; mods = <(MOD_LCTL)>; bindings = <&mkp RCLK>, <&mmv MOVE_RIGHT>; };
-        };
     };
     macros {
         win_sleep: win_sleep { wait-ms = <50>; tap-ms = <5>; compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LG(X) &kp U &kp S>; };
