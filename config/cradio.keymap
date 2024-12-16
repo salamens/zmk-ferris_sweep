@@ -43,6 +43,10 @@
         hsl: hold_sticky_layer  { bindings = <&kp>, <&sl>;        compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
         hmk: hold_mouse_key     { bindings = <&kp>, <&mkp>;       compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
         hcw: hold_caps_word     { bindings = <&kp>, <&caps_word>; compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "hold-preferred"; tapping-term-ms = <200>; };
+        m_lclk_lmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&mkp LCLK>, <&mmv MOVE_LEFT>; mods = <(MOD_LCTL)>;
+        m_mclk_dmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&mkp MCLK>, <&mmv MOVE_DOWN>; mods = <(MOD_LCTL)>;
+        m_rclk_rmove { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&mkp RCLK>, <&mmv MOVE_RIGHT>; mods = <(MOD_LCTL)>;
+        };
     };
     macros {
         win_sleep: win_sleep { wait-ms = <50>; tap-ms = <5>; compatible = "zmk,behavior-macro"; #binding-cells = <0>; bindings = <&kp LG(X) &kp U &kp S>; };
@@ -79,9 +83,9 @@
         layer3 {
             display-name = "FUNMSE";
             bindings = <
-                 &kp F12         &kp F9           &kp F8            &kp F7           &kp C_MUTE                                                          &kp C_PLAY_PAUSE &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT
-                 &kp F11         &kp F6           &kp F5            &kp F4           &kp C_VOL_UP                                                        &kp C_PREV       &mkp LCLK        &mkp MCLK        &mkp RCLK        &none
-                 &kp F10         &kp F3           &kp F2            &kp F1           &kp C_VOL_DN                                                        &kp C_NEXT       &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT
+                 &hsk LALT LALT   &kp F9           &kp F8           &kp F7           &kp F12                                                             &kp C_MUTE       &msc SCRL_LEFT   &mmv MOVE_UP     &msc SCRL_RIGHT  &none
+                 &hsk LCTRL LCTRL &kp F6           &kp F5           &kp F4           &kp F11                                                             &kp C_VOL_UP     &m_lclk_lmove    &m_mclk_dmove    &m_rclk_rmove    &none
+                 &hsk LSHFT LSHFT &kp F3           &kp F2           &kp F1           &kp F10                                                             &kp C_VOL_DN     &kp C_PREV       &kp C_PLAY_PAUSE &kp C_NEXT       &none
                                                                     &none            &none                                                               &mo 4            &kp K_APP >;
 
         };
