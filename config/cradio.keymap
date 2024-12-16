@@ -71,7 +71,7 @@
             display-name = "SYMBOL";
             bindings = <
                  &kp EXCL         &kp AT           &kp POUND        &kp DLLR         &kp PRCNT                                                           &kp CARET        &kp AMPS         &kp ASTRK        &kp PIPE         &kp BSLH
-                 &kp GRAVE        &kp LBKT         &kp LBRC         &kp LPAR         &kp C_BRI_UP                                                        &kp C_AC_BACK    &kp EQUAL        &kp DQT          &kp SQT          &kp COLON
+                 &kp GRAVE        &kp LBKT         &kp LBRC         &kp LPAR         &kp C_BRI_UP                                                        &kp C_AC_BACK    &kp EQUAL        &kp SQT          &kp DQT          &kp COLON
                  &kp TILDE        &kp RBKT         &kp RBRC         &kp RPAR         &kp C_BRI_DN                                                        &kp C_AC_FORWARD &kp UNDER        &kp LT           &kp GT           &kp QMARK
                                                                     &kp MINUS        &kp PLUS                                                            &none            &none >;
 
@@ -80,7 +80,7 @@
             display-name = "FUNMSE";
             bindings = <
                  &kp F12         &kp F9           &kp F8            &kp F7           &kp C_MUTE                                                          &kp C_PLAY_PAUSE &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP     &mmv MOVE_RIGHT
-                 &kp F11         &kp F6           &kp F5            &kp F4           &kp C_VOL_UP                                                        &kp C_PREV       &mkp LCLK        &mkp MB3         &mkp RCLK        &none
+                 &kp F11         &kp F6           &kp F5            &kp F4           &kp C_VOL_UP                                                        &kp C_PREV       &mkp LCLK        &mkp MCLK        &mkp RCLK        &none
                  &kp F10         &kp F3           &kp F2            &kp F1           &kp C_VOL_DN                                                        &kp C_NEXT       &msc SCRL_LEFT   &msc SCRL_DOWN   &msc SCRL_UP     &msc SCRL_RIGHT
                                                                     &none            &none                                                               &mo 4            &kp K_APP >;
 
