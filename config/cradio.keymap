@@ -93,8 +93,17 @@
             bindings = <
                  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4                                                        &rgb_ug RGB_SPI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_EFR 
                  &bt BT_DISC 0    &bt BT_DISC 1    &bt BT_DISC 2    &bt BT_DISC 3    &bt BT_DISC 4                                                       &rgb_ug RGB_SPD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_EFF 
-                 &bt BT_CLR_ALL   &none            &none            &bt BT_CLR       &out OUT_TOG                                                        &rgb_ug RGB_TOG  &default_report  &none            &none            &studio_unlock
+                 &bt BT_CLR_ALL   &none            &none            &bt BT_CLR       &out OUT_TOG                                                        &rgb_ug RGB_TOG  &default_report  &tog 5           &none            &studio_unlock
                                                                     &bootloader      &none                                                               &none            &bootloader >;
+
+        };
+        layer5 {
+            display-name = "COLMAK";
+            bindings = <
+                 &kp Q            &kp W            &kp F            &kp P            &kp B                                                               &kp J            &kp L            &kp U            &kp Y            &kp SEMI
+                 &kp A            &kp R            &kp S            &kp T            &kp G                                                               &kp M            &kp N            &kp E            &kp I            &kp O
+                 &kp Z            &kp X            &kp C            &kp D            &kp V                                                               &kp K            &kp H            &kp COMMA        &kp DOT          &kp FSLH
+                                                                    &lt 1 ESC        &lt 3 SPACE                                                         &kp SPACE        &lsk 2 LSHFT >;
 
         };
     };
